@@ -1,0 +1,43 @@
+<div style="display: flex;align-items: center;flex-direction: column;">
+<p>First Component have to work</p>
+
+<button mat-fab extended >
+    <mat-icon>home</mat-icon>
+    Home
+  </button>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="" [value]="favfood " [disabled]="disable" #fav >
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput placeholder=""></textarea>
+    </mat-form-field>
+  </form>
+<p *ngIf="true">My Name is {{name23}}</p>
+ @if(true){ <p>and my age is {{age}}</p>}
+  <ul>
+    <li *ngFor="let x of buses;let i=index">{{x}}</li>
+  </ul>
+  <!-- <table>
+    <tr *ngFor="let pas of passengers">
+        <td>{{pas.name}}</td>
+        <td>{{pas.age}}</td>
+    </tr>
+  </table> -->
+
+  <table>
+    @for(pas of passengers;track $index;let e=$even){
+    <tr>
+        <td>{{e}}</td>
+        <td>{{pas.age}}</td>
+    </tr>
+}
+  </table>
+
+  
+
+
+</div>

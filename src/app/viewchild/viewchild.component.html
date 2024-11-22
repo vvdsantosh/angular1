@@ -1,0 +1,22 @@
+<div class="full-data">
+<p>viewchild works!</p>
+
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput #favfood>
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+  </form>
+
+<button mat-fab  aria-label="" style="width:250px;" (click)="favfood2(favfood.value)">
+    <mat-icon style="margin-right: 5px;">favorite</mat-icon>
+    Click the button
+  </button>
+<h3>{{curntVal}}</h3>
+<app-viewinner></app-viewinner>
+</div>
