@@ -20,6 +20,6 @@ export class BackgroundDirective {
   @HostListener('click') san()
 {
  // this._rendr.setAttribute(this._el.nativeElement,"style","background-color:blue;color:#fff;font-size:21px;")
- this.tbs="green";
+ this.tbs="yellow";
 }
 }
