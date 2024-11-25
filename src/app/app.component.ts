@@ -6,12 +6,13 @@ import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ParentcontentComponent } from './parentcontent/parentcontent.component';
 import { ChildcontentComponent } from './childcontent/childcontent.component';
 import { BackgroundDirective } from '../Directives/background.directive';
+import { HeaderComponent } from './header/header.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FirstcomComponent,SenderComponent,ViewchildComponent,ParentcontentComponent,ChildcontentComponent,BackgroundDirective],
+  imports: [RouterOutlet,FirstcomComponent,SenderComponent,ViewchildComponent,ParentcontentComponent,ChildcontentComponent,BackgroundDirective,HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
