@@ -1,0 +1,16 @@
+<p>aboutus works!</p>
+
+<table class="table">
+    <tr>
+    @for( san of keyArray; track san ){
+        <td>{{san}}</td>
+    }
+    </tr>
+    @for(stud of school;track stud){
+    <tr (click)="rowclick(stud)">
+       <td>{{stud.subject2}}</td>
+       <td>{{stud.Teacher}}</td>
+       
+    </tr>
+}
+</table>
